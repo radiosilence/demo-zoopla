@@ -1,0 +1,116 @@
+body, html {
+  color: #4a4a4a;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Progressive enhancement */
+div.wrapper {
+  margin: 0;
+  width: 100%;
+  left: 0;
+}
+
+header {
+  width: 100%;
+  padding-top: 1em;
+}
+
+header a.branding {
+  width: 245px;
+  display: block;
+  margin: 1em .5em;
+}
+
+header a.branding img {
+  max-width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+nav > ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav > ul > li > a {
+  display: block;
+  padding: .5em 1em .5em 1em;
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+nav.primary {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+nav.primary a {
+  color: white;
+}
+
+nav.secondary, nav.footer {
+  background-color: #6a148e;
+}
+
+nav.secondary a, nav.footer a {
+  color: white;
+}
+
+section {
+  padding-left: .5em;
+  padding-bottom: 2em;
+}
+
+.accordion section {
+  padding: 0;
+}
+
+.accordion section header * {
+  margin-right: 1em;
+}
+
+.accordion section .body {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+@media (min-width: 640px) {
+  nav > ul > li {
+    float: left;
+  }
+  div.wrapper {
+    max-width: 640px;
+    position: relative;
+    left: 50%;
+    margin-left: -320px;
+  }
+}
+@media (min-width: 1200px) {
+  div.wrapper {
+    max-width: 960px;
+    margin-left: -480px;
+  }
+  nav {
+    float: left;
+    width: 50%;
+    margin-bottom: 2em;
+  }
+}
